@@ -1,2 +1,2 @@
-let isBeer = confirm("Павел должен пиво Ивану грандместеру интернета?");
-alert(isBeer);
+let name = prompt('What is your name?');
+alert(`Hello ${name}! How are you?`); 
