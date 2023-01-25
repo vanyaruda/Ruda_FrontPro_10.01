@@ -2,7 +2,7 @@
 
 // alert(`Hello, ${name}! How are you?`);
 
-// // ! ДЗ 3. Математичні операції
+// ! ДЗ 3. Математичні операції
 
 // let userFirstNumber = +prompt('the first number');
 // let userSecondNumber = +prompt('the second number');
@@ -11,12 +11,12 @@
 // alert(userFirstNumber * userSecondNumber);
 // alert(userFirstNumber / userSecondNumber);
 
-// // ! ДЗ 4. Години в секунди
+// ! ДЗ 4. Години в секунди
 
 // let userTime = +prompt('What time is it?')
 // alert(`${userTime * 60 ** 2} seconds`);
 
-// // ! ДЗ 5. Середнє значення
+// ! ДЗ 5. Середнє значення
 
 // let userFirstMediumNumber = +prompt('first number');
 // let userSecondMediumNumber = +prompt('second nimber');
@@ -24,21 +24,21 @@
 // alert((userFirstMediumNumber + userSecondMediumNumber + userThirdMediumNumber) / 3);
 
 
-// // ! ДЗ 6. Числа та рядки
+// ! ДЗ 6. Числа та рядки
 
 // const userWord1 = prompt('Рядок 1', '');
 // const userWord2 = prompt('Рядок 2', '');
 // const userWord3 = prompt('Рядок 3', '');
 // alert(userWord1 + ' ' + userWord3 + ' ' + userWord2);
 
-// // second chapter
+// second chapter
 
 // const numbers = 12345;
 // const stringNumbers = numbers.toString();
 // alert(`${stringNumbers[0]} ${stringNumbers[1]} ${stringNumbers[2]} ${stringNumbers[3]} ${stringNumbers[4]}`);
 
 
-// // ! ДЗ 7. Калькулятор
+// ! ДЗ 7. Калькулятор
 // const userOption = prompt('add, sub, mult, div', '');
 // const calkNumber1 = +prompt('Перше число', '');
 // const calkNumber2 = +prompt('Друге число', '');
@@ -53,7 +53,7 @@
 //     alert(`${calkNumber1} / ${calkNumber2} = ${calkNumber1 / calkNumber2}`);
 // }
 
-// // ! ДЗ 8. Портрет користувача
+// ! ДЗ 8. Портрет користувача
 
 // const userBirthYear = +prompt('Рік народження');
 // const userCity = prompt('ти живеш');
@@ -94,7 +94,7 @@
 // alert(`${userYears} \n ${userLivesCity} \n ${userSport}`);
 
 
-// // ! ДЗ 9. switch...case
+// ! ДЗ 9. switch...case
 
 // let numOrStr = prompt('input number or string');
 
@@ -131,7 +131,7 @@
 // !Вивести таблицю множення на 7
 // let result = ''
 // for (i = 1; i <= 10; i++) {
-//     result = (i * 7);
+//     result = (`${i} * 7 = ${i * 7}`);
 //     console.log(result)
 
 // }
@@ -203,10 +203,10 @@
 
 // !Надрукувати повну таблицю множення від 1 до 10.
 
-let sum = 1
-for (i = 1; i <= 10; i++) {
-    for (j = 1; j <= 10; j++) {
-        console.log((+ j + "*" + i + "=" + (i * j) + ""))
-    }
+// let sum = 1
+// for (i = 1; i <= 10; i++) {
+//     for (j = 1; j <= 10; j++) {
+//         console.log((+ j + "*" + i + "=" + (i * j) + ""))
+//     }
 
-}
+// }
