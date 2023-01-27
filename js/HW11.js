@@ -48,3 +48,7 @@ for (i = 1; i <= userNumberPar; i++) {
     }
     console.log(resultPar)
 }
+
+let userArray1 = [1, 2, 3, 4, 5];
+const userArrayKvadrat = userArray1.map(Element => Element ** 2);
+console.log(userArrayKvadrat)
