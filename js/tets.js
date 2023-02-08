@@ -1,15 +1,29 @@
-const UpperCase = ("background-color")
-function camelize(str) {
-    return str
-        .split('-') // разбивает 'my-long-word' на массив ['my', 'long', 'word']
-        .map(
-            // Переводит в верхний регистр первые буквы всех элементом массива за исключением первого
-            // превращает ['my', 'long', 'word'] в ['my', 'Long', 'Word']
-            (word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)
-        )
-        .join('');
-    // соединяет ['my', 'Long', 'Word'] в 'myLongWord'
-}
-console.log(camelize(UpperCase))
-const blabla = ("list-style-image")
-console.log(camelize(blabla))
+// const userIvan = {
+//     name: 'Иван',
+//     age: 25,
+//     lenguig: 'Украинский',
+//     address: {
+//         city: 'Новомосковск',
+//         street: 'Гетьманская 47'
+//     },
+// }
+
+// const userPavlo = {
+//     name: 'Павел',
+//     age: 25,
+//     lenguig: 'Украинский',
+//     address: {
+//         city: 'Новомосковск',
+//         street: 'Олеся Гончара 29В'
+//     }
+// }
+
+// let showMessage = (key) => {
+//     let res = `${[key.name]}, тебе ${[key.age]} лет. Твой родной язык ${[key.lenguig]} Ты живешь в городе ${[key.address.city]}, на улице ${[key.address.street]}. `
+//     return res
+// }
+// console.log(showMessage(userIvan))
+// console.log(showMessage(userPavlo))
+
+
+
