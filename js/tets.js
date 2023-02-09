@@ -26,4 +26,6 @@
 // console.log(showMessage(userPavlo))
 
 
-
+const arr = ['elelelelle', ' elelelelelel'];
+const newaaa = arr[arr.length - 1]
+console.log(newaaa)
