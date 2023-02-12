@@ -104,3 +104,63 @@ const functionExperienceChecker = (arr) => {
 const experienced = functionExperienceChecker(array);
 console.log(experienced)
 
+
+
+// ! Рекурсия. Замыкание ф-и. метод !This!
+
+// Створіть функцію, яка приймає число та повертає іншу функцію, яка при виклику повертає суму переданого числа та числа, яке було передане при створенні замикання.
+
+// Приклад:
+// const add5 = adder(5);
+// console.log(add5(3)); // 8
+
+function counter() {
+    let count = 0;
+    return function countFunc(n) {
+        return count += n
+    }
+}
+
+const addAr = counter()
+
+    // Створіть функцію, яка виводить в консоль число 5. Використовуючи ! IIFE.
+
+    (function () {
+        console.log(5)
+    })()
+
+// Створіть функцію, яка приймає масив чисел та іншу функцію, яка обробляє кожен елемент масиву, та повертає новий масив з елементів, оброблених заданою функцією. HOF function
+
+// Приклад: console.log(processArray(numbers, (number) => {
+//     return number * number;
+//   })); // [1, 4, 9, 16, 25]
+
+const processArray = (numbers, callback) => {
+    const processedArray = [];
+    for (let i = 0; i < numbers.length; i++) {
+        processedArray.push(callback(numbers[i]));
+    }
+    console.log(processedArray);
+}
+
+processArray([1, 2, 3, 4, 5], (number) => { return number + 2 });
+
+// Створіть функцію, яка приймає масив рядків та повертає новий масив, який містить тільки рядки з довжиною більше 3 символів.
+
+// Приклад: console.log(['foo', 'bar', 'baz', 'qux', 'quux']); // ['qux', 'quux']
+
+const arrowFuncFilter = (arr) => {
+
+    return arr.filter((elem) => elem.length > 3)
+
+}
+arrowFuncFilter()
+
+// Створіть функцію, яка приймає масив чисел та повертає суму всіх його елементів.
+
+// Приклад: console.log([1, 2, 3, 4, 5]); // 15
+
+const addFunc = (arr) => {
+    return arr.reduce((acc, curr) => acc + curr)
+}
+addFunc()
