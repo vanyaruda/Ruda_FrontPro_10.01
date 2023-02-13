@@ -5,77 +5,33 @@
 // У підсумкового інстансу повинні бути функції машини типу їхати і гальмувати з прототипу так і функції пов'язані з маркою машини типу вертикального відкриття дверей Lamborghini.
 
 
-// !Метод № 1
-const autoCharacters = {
-    toBreack: [],
-    toDrive: [],
-    toOpenVerticalDoor: [],
+function Cars(brand) {
+    this.brand = brand;
 
-    breack(can) {
-        this.toBreack.push(can)
+}
+
+const defaultMet = {
+    drive() {
+        console.log(`${this.brand} can driving`)
     },
-    drive(can) {
-        this.toDrive.push(can)
+    breack() {
+        console.log(`${this.brand} can breacking`)
     },
-    verticalDoorcan(can) {
-        this.toOpenVerticalDoor.push(can)
-    }
-
+    openDoor() {
+        console.log(`${this.brand} has ${this.opeD} opening door`)
+    },
+    openDoor: 'standart'
 }
 
-const bmw = {
-    toBreack: [],
-    toDrive: [],
-    __proto__: autoCharacters,
-}
-bmw.breack('true')
-bmw.drive('true')
-bmw.verticalDoorcan('false')
-console.log(bmw)
+Cars.prototype = defaultMet
 
-
-const lamba = {
-    toBreack: [],
-    toDrive: [],
-    toOpenVerticalDoor: [],
-    __proto__: autoCharacters
-}
-lamba.breack('true')
-lamba.drive('true')
-lamba.verticalDoorcan('true')
-
+const audi = new Cars('audi')
+const lamba = new Cars('lamba')
+lamba.openDoor = 'vertical'
+console.log(audi)
 console.log(lamba)
 
-// ! Метод № 2
 
-function CharacteristicsCar(toDrive, toBreack, toOpenVerticalDoor, power) {
-    this.toDrive = toDrive;
-    this.toBreack = toBreack;
-    this.toOpenVerticalDoor = toOpenVerticalDoor;
-    this.power = power;
-}
 
-const volkswagen = new CharacteristicsCar('true', 'true', 'false', 'top car maybe 1500 h/p')
-console.log(volkswagen)
 
-const maserati = new CharacteristicsCar('true', 'true', 'can do this', 'i dont now:)');
-console.log(maserati);
 
-// ! Метод № 3
-
-const jeep = {
-    toBreack: true,
-    toDrive: true,
-    toUpDoor: false,
-    get characterCars() {
-        return `${this.toBreack}:breack ${this.toDrive}:drive ${this.toUpDoor}:updoor`
-    }
-
-}
-console.log(jeep)
-const ferrari = {
-    __proto__: jeep
-}
-ferrari.toUpDoor = true
-
-console.log(ferrari)
