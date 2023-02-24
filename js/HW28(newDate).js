@@ -4,11 +4,11 @@
 
 
 function constTime(time) {
-    const usTime = new Date().setTime(1677110400000)
-    // or const usTime = new Date().getTime()
-    time === usTime ? console.log("true") : console.log('false')
+    const usTime = Date.now()
+
+    return time === usTime ? "true" : "false"
 }
-constTime(1677110400000)
+console.log(constTime(1677110400000))
 
 // Создать функцию которая вернет дату и время в формате 13.10.2022 13:13 принимая миллисекунды
 
