@@ -5,7 +5,7 @@
 
 function constTime(time) {
     const usTime = new Date().setTime(1677110400000)
-
+    // or const usTime = new Date().getTime()
     time === usTime ? console.log("true") : console.log('false')
 }
 constTime(1677110400000)
