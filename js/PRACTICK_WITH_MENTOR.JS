@@ -123,11 +123,11 @@ function counter() {
 
 const addAr = counter()
 
-    // Створіть функцію, яка виводить в консоль число 5. Використовуючи ! IIFE.
+// Створіть функцію, яка виводить в консоль число 5. Використовуючи ! IIFE.
 
-    (function () {
-        console.log(5)
-    })()
+// (function () {
+//     console.log(5)
+// })()
 
 // Створіть функцію, яка приймає масив чисел та іншу функцію, яка обробляє кожен елемент масиву, та повертає новий масив з елементів, оброблених заданою функцією. HOF function
 
@@ -135,7 +135,7 @@ const addAr = counter()
 //     return number * number;
 //   })); // [1, 4, 9, 16, 25]
 
-const processArray = (numbers, callback) => {
+function processArray(numbers, callback) {
     const processedArray = [];
     for (let i = 0; i < numbers.length; i++) {
         processedArray.push(callback(numbers[i]));
@@ -149,18 +149,113 @@ processArray([1, 2, 3, 4, 5], (number) => { return number + 2 });
 
 // Приклад: console.log(['foo', 'bar', 'baz', 'qux', 'quux']); // ['qux', 'quux']
 
-const arrowFuncFilter = (arr) => {
+// const arrowFuncFilter = (arr) => {
 
-    return arr.filter((elem) => elem.length > 3)
+//     return arr.filter((elem) => elem.length > 3)
 
-}
-arrowFuncFilter()
+// }
+// arrowFuncFilter()
 
 // Створіть функцію, яка приймає масив чисел та повертає суму всіх його елементів.
 
 // Приклад: console.log([1, 2, 3, 4, 5]); // 15
 
-const addFunc = (arr) => {
-    return arr.reduce((acc, curr) => acc + curr)
+// const addFunc = (arr) => {
+//     return arr.reduce((acc, curr) => acc + curr)
+// }
+// addFunc()
+
+
+// ! 02.03.2023
+
+
+// В одному рядку оголосіть три змінні з наступними іменами та значеннями:
+
+// firstName = "John"
+// lastName = "Doe"
+// age = 35
+
+const firstName = 'Joe'; lastName = 'Doe'; age = 35
+
+console.log(lastName)
+
+
+// Створіть 3 змінні з такими типами: string, boolean, undefined.
+
+// Typeof x // string
+// Typeof y // boolean
+// Typeof z // undefined
+
+const stringA = 'John';
+const bool = true
+let undefineded;
+
+
+// Створіть функцію, яка приймає необмежену кількість аргументів і повертає масив без повторень.
+
+// Const result = deleteDublicates(1, 2, 3, 2);
+// console.log(result) // [1, 2, 3]
+
+const deleteDublicates = (...args) => {
+    return [...new Set(args)]
 }
-addFunc()
+
+const result = deleteDublicates(1, 1, 1, 2)
+console.log(result)
+
+
+// Створіть функцію, яка приймає масив з п’ятьма аргументами, якщо передаєш більше, або менше, то функція зупиняє свою роботу. Якщо ні, то поступово виводить в консоль типи змінних всередині масиву.
+
+// getTypes(true, 2, null, 2, ‘s’); // boolean, number, object, number, string
+
+function hz(...args) {
+    if (args.length !== 5) return
+    args.forEach(elem => console.log(typeof elem))
+}
+hz(1, true, 'ivan', undefined, null)
+
+// Використовуйте правильний метод Array, щоб відсортувати масив фруктів за алфавітом.
+
+// ["Banana", "Orange", "Apple", "Kiwi"].method() // ["Apple", "Banana", "Kiwi", "Orange"]
+
+const sorted = ["Banana", "Orange", "Apple", "Kiwi"].sort()
+
+console.log(sorted)
+
+// Використовуйте правильний метод Array, щоб видалити з масиву об’єктів всі об’єкти, у який вік менше 18.
+
+// [{name: "John", age: 19},  {name: "Paul", age: 10}].method() // [{name: "John", age: 19}]
+
+console.log([{ name: "John", age: 19 }, { name: "Paul", age: 10 }].filter(elem => elem.age > 18))
+
+// Створіть функцію, яка об'єднує безліч вхідних масивів в один.
+
+// Const result = concatArrays([1], [2], [3]]
+//     console.log(result) // [1, 2, 3]
+
+
+function tougeze(...args) {
+    return args.flat()
+}
+
+console.log(tougeze([1], [2], [3]))
+
+// Створіть функцію, яка повертає два методи: increment (count++) та decrement (count--), яка замикає в собі значення.
+
+// const [increment, decrement] = new closure()
+// increment() // 1
+// increment() // 2
+// decrement() // 1
+// function funcZam() {
+//     let count = 0;
+//     function increment() {
+//         count++;
+
+//     };
+//     function decrement() {
+//         count--
+//     }
+//     [increment, decrement]
+// }
+// let [increment, decrement] = funcZam()
+// console.log(increment)
