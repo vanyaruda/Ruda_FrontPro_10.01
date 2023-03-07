@@ -4,15 +4,9 @@
 
 const numbersArray = [1, 1, 2, 3, 4, 5, 5, 5, 6];
 
-// Два варианта:
 
-// первый:
-let set = new Set(numbersArray)
-console.log(set)
-
-// Второй вариант:
 function uniqueValues(array) {
-    return new Set(array)
+    return [...new Set(array)]
 }
 
 console.log(uniqueValues(numbersArray))
