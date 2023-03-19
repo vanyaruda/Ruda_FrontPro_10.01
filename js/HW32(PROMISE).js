@@ -4,8 +4,11 @@
 let promises = new Promise((resolve) => {
     setTimeout(() => {
         resolve('I wake up at 7 o\'clock')
+
     }, 1000)
 });
+
+
 promises.then((result) => {
     console.log(result);
     return new Promise((resolve) => {
