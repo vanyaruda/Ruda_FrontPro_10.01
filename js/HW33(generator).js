@@ -2,18 +2,18 @@
 
 // 1) Реализовать функцию-генератор которая отдаст 10 рандомных чисел в диапазоне переданном в аргументах в ней.
 
-// function* generateSequence(start = 1, end) {
-//     for (let i = 0; i <= 10; i++) {
-//         let res = Math.floor(Math.random() * (start - end) + end);
-//         yield res;
-//     }
-// }
+function* generateSequence(start = 1, end) {
+    for (let i = 0; i <= 10; i++) {
+        let res = Math.floor(Math.random() * (start - end) + end);
+        yield res;
+    }
+}
 
-// const generator = generateSequence(1, 10);
+const generator = generateSequence(1, 10);
 
-// for (let res of generator) {
-//     console.log(res);
-// }
+for (let res of generator) {
+    console.log(res);
+}
 
 
 // 2) Создать свой распорядок дня с помощью async await ( тоесть мы должны "подождать" выполнение асинхронной функции brushTeeth перед тем как приступать к выполнению следующей асинхронной функции
