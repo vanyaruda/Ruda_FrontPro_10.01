@@ -16,7 +16,12 @@ for (let res of generator) {
 }
 
 
+
+
 // 2) Создать свой распорядок дня с помощью async await ( тоесть мы должны "подождать" выполнение асинхронной функции brushTeeth перед тем как приступать к выполнению следующей асинхронной функции
+
+
+
 const morning = new Promise((resolve) => {
     setTimeout(() => resolve('I wake up at 7 o\'clock'), 1000)
 
