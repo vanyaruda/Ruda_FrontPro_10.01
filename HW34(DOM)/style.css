@@ -1,0 +1,37 @@
+body{
+background-color: rgb(90, 26, 82);
+
+}
+.Inp{
+  display: flex;
+  align-items: center;
+    width: 200px;
+    padding: 20px;
+    background-color: blue;
+    align-items: center;
+    text-align: center;
+    
+    margin: auto;
+
+}
+::placeholder{
+    color: black;
+}
+
+.wrapper{
+    margin-top: 50px;
+    position: relative;
+    
+}
+
+.wrapper-item{
+text-align: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 200px;
+    background-color: bisque;
+    padding: 30px;
+    text-align: center;
+    display: none;
+}
