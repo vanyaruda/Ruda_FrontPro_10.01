@@ -1,0 +1,22 @@
+body{
+    background-color: bisque;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25%;
+}
+.btn{
+    background-color: #da6262;
+    border: 0;
+    padding: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.smile-container{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
