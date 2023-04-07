@@ -26,8 +26,9 @@ link.forEach(link => {
 
         if (linkHref.startsWith('http') === false && linkHref.startsWith('https') === false) {
             fullUrl = `https://${linkHref}`
-            location.href = fullUrl
-
+            // location.href = fullUrl - щоб у цьому ж вікні
+            // open(fullUrl, '_blank')  - для таргету (відкритті у другому вікні)
+            open(fullUrl, '_blank')
         }
     })
 
