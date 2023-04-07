@@ -1,6 +1,14 @@
-body{
+
+.container{
     display: flex;
-    justify-content: center;
     align-items: center;
-   
+    justify-content: center;
+}
+.btn{
+    background-color: #d64444;
+    border-radius: 10%;
+    padding: 10px;
+    cursor:pointer;
+    border: none;
+    margin-right: 20px;
 }
