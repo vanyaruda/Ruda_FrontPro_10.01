@@ -1,0 +1,80 @@
+/* Reset all box sizing to content-box */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Remove default margin and padding from all elements */
+  html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, legend, textarea, input[type="text"], input[type="password"], button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set default font size and line height */
+  html {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Remove list styling */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove default hyperlink styling */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Remove default styling from form elements */
+  input, select, textarea, button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  
+
+  .container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 150px;
+    background: linear-gradient(
+      90deg,
+      rgb(0, 47, 255),
+      rgb(235, 252, 1)
+    );
+
+  }
+
+  .items-container{
+
+
+  }
+
+  .items{
+    margin-top: 20px;
+width: 100px;
+height: 100px;
+cursor: pointer;
+margin-bottom: 20px;
+display: block;
+
+  }
+  .clicker{
+    font-weight: 900;
+    border-radius: 20px;
+    border: 0;
+width: 50%;
+
+margin-left: 23px;
+background: linear-gradient(
+    90deg,
+    rgb(0, 47, 255),
+    rgb(235, 252, 1)
+  );
+  margin-bottom: 20px;
+  }
+  
